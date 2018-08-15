@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find cob_people_object_detection_tensorflow)/launch/cob_people_object_detection_tensorflow.launch" />
+  <include file="$(find cob_people_object_detection_tensorflow)/launch/projection.launch"/>
+  <include file="$(find cob_people_object_detection_tensorflow)/launch/cob_people_object_tracker.launch"/>
+  <node pkg="object_cloud" type="object_cloud_node" name="object_cloud_node" output="screen" />
+</launch>
+

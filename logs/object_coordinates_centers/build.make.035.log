@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target pointXYZ
+[0m[100%] [32mBuilding CXX object CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o
+[0m[31m[1mLinking CXX executable /home/dan/dan_ws/devel/.private/object_coordinates_centers/lib/object_coordinates_centers/pointXYZ
+[0m[100%] Built target pointXYZ

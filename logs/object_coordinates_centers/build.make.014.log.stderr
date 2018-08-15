@@ -1,0 +1,44 @@
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:28:69: error: no matching function for call to ‘waitForMessage(const char [32], ros::NodeHandle&)’
+  m = ros::topic::waitForMessage("/camera/depth_registered/points", n); 
+                                                                     ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:28:69: note: candidates are:
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:86:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&, ros::NodeHandle&, ros::Duration)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, NodeHandle& nh, ros::Duration timeout)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:86:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:28:69: note:   candidate expects 3 arguments, 2 provided
+  m = ros::topic::waitForMessage("/camera/depth_registered/points", n); 
+                                                                     ^
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:105:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:105:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:28:69: note:   candidate expects 1 argument, 2 provided
+  m = ros::topic::waitForMessage("/camera/depth_registered/points", n); 
+                                                                     ^
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:120:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&, ros::Duration)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, ros::Duration timeout)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:120:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:28:69: note:   cannot convert ‘n’ (type ‘ros::NodeHandle’) to type ‘ros::Duration’
+  m = ros::topic::waitForMessage("/camera/depth_registered/points", n); 
+                                                                     ^
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:135:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&, ros::NodeHandle&)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, ros::NodeHandle& nh)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:135:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:28:69: note:   couldn't deduce template parameter ‘M’
+  m = ros::topic::waitForMessage("/camera/depth_registered/points", n); 
+                                                                     ^
+make[2]: *** [CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pointXYZ.dir/all] Error 2
+make: *** [all] Error 2

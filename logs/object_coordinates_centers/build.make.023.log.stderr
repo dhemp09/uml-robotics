@@ -1,0 +1,38 @@
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp: In function ‘void callBack(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:34:10: error: expected ‘;’ before ‘mark’
+          mark.pose.position.y = centers.points[i].y  //left
+          ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:65:23: error: ‘Marker’ was not declared in this scope
+  marker = n.advertise<Marker>("/object_center_markers", 1);
+                       ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:65:23: note: suggested alternative:
+In file included from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:10:0:
+/opt/ros/indigo/include/visualization_msgs/Marker.h:138:62: note:   ‘visualization_msgs::Marker’
+ typedef ::visualization_msgs::Marker_<std::allocator<void> > Marker;
+                                                              ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:65:58: error: no matching function for call to ‘ros::NodeHandle::advertise(const char [23], int)’
+  marker = n.advertise<Marker>("/object_center_markers", 1);
+                                                          ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:65:58: note: candidates are:
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/node_handle.h:248:15: note: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)
+     Publisher advertise(const std::string& topic, uint32_t queue_size, bool latch = false)
+               ^
+/opt/ros/indigo/include/ros/node_handle.h:248:15: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:65:58: error: template argument 1 is invalid
+  marker = n.advertise<Marker>("/object_center_markers", 1);
+                                                          ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/node_handle.h:314:13: note: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)
+   Publisher advertise(const std::string& topic, uint32_t queue_size,
+             ^
+/opt/ros/indigo/include/ros/node_handle.h:314:13: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:65:58: error: template argument 1 is invalid
+  marker = n.advertise<Marker>("/object_center_markers", 1);
+                                                          ^
+make[2]: *** [CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pointXYZ.dir/all] Error 2
+make: *** [all] Error 2

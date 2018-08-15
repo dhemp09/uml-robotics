@@ -1,0 +1,8 @@
+prefix=/home/dan/dan_ws/install
+
+Name: region_growing_rgb
+Description: Description of region_growing_rgb
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dan/dan_ws/install/lib 
+Requires: roscpp std_msgs tf pcl_ros

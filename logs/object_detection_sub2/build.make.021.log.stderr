@@ -1,0 +1,10 @@
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:39:10: error: ‘class ros::NodeHandle’ has no member named ‘advertize’
+  pub = n.advertize<geometry_msgs::PoseArray>("/object_centers", 1);
+          ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:39:44: error: expected primary-expression before ‘>’ token
+  pub = n.advertize<geometry_msgs::PoseArray>("/object_centers", 1);
+                                            ^
+make[2]: *** [CMakeFiles/sub.dir/src/object_detect_sub_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/sub.dir/all] Error 2
+make: *** [all] Error 2

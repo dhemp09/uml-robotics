@@ -1,0 +1,7 @@
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp: In function ‘void callBack(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:10: error: ‘geometry_msgs::Pose’ has no member named ‘header’
+    point.header.frame_id = msg->header.frame_id;
+          ^
+make[2]: *** [CMakeFiles/sub.dir/src/object_detect_sub_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/sub.dir/all] Error 2
+make: *** [all] Error 2

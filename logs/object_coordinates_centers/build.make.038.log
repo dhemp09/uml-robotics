@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target pointXYZ
+[0m[100%] [32mBuilding CXX object CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp: In function ‘void callBack(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:22:42: error: ‘endl’ was not declared in this scope
+   std::cerr << centers.points[i].rgba << endl;
+                                          ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:22:42: note: suggested alternative:
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /opt/ros/indigo/include/ros/time.h:54,
+                 from /opt/ros/indigo/include/ros/ros.h:38,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/usr/include/c++/4.8/ostream:564:5: note:   ‘std::endl’
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+make[2]: *** [CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pointXYZ.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,7 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:117:34: error: ‘struct pcl::PointIndices’ has no member named ‘size’
+   for(int k = 0; k < clusters[j].size(); k++)
+                                  ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

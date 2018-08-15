@@ -1,0 +1,21 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:72:29: error: void value not ignored as it ought to be
+      std::cerr << *indices[i];
+                             ^
+In file included from /usr/include/boost/shared_ptr.hpp:17:0,
+                 from /usr/include/boost/format/alt_sstream.hpp:21,
+                 from /usr/include/boost/format/internals.hpp:23,
+                 from /usr/include/boost/format.hpp:38,
+                 from /usr/include/boost/math/policies/error_handling.hpp:31,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/indigo/include/ros/time.h:58,
+                 from /opt/ros/indigo/include/ros/ros.h:38,
+                 from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:1:
+/usr/include/boost/smart_ptr/shared_ptr.hpp: In instantiation of ‘typename boost::detail::sp_array_access<T>::type boost::shared_ptr<T>::operator[](std::ptrdiff_t) const [with T = std::vector<int>; typename boost::detail::sp_array_access<T>::type = void; std::ptrdiff_t = long int]’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:72:29:   required from here
+/usr/include/boost/smart_ptr/shared_ptr.hpp:663:22: error: return-statement with a value, in function returning 'void' [-fpermissive]
+         return px[ i ];
+                      ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

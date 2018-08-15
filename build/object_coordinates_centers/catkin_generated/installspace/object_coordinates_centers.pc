@@ -1,0 +1,8 @@
+prefix=/home/dan/dan_ws/install
+
+Name: object_coordinates_centers
+Description: Description of object_coordinates_centers
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dan/dan_ws/install/lib 
+Requires: 

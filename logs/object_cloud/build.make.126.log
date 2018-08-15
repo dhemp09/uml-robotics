@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target object_cloud_node
+[0m[100%] [32mBuilding CXX object CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o
+[0m[31m[1mLinking CXX executable /home/dan/dan_ws/devel/.private/object_cloud/lib/object_cloud/object_cloud_node
+[0m[100%] Built target object_cloud_node

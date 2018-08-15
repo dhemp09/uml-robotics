@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/cob_image_flip/share/cob_image_flip/cmake/cob_image_flipConfig-version.cmake

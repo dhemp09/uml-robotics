@@ -1,0 +1,25 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:138:3: error: ‘boundingBoxes’ was not declared in this scope
+   boundingBoxes = ros::waitForMessage("/object_detection/detections", n);
+   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:138:19: error: ‘waitForMessage’ is not a member of ‘ros’
+   boundingBoxes = ros::waitForMessage("/object_detection/detections", n);
+                   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:138:19: note: suggested alternative:
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:135:28: note:   ‘ros::topic::waitForMessage’
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, ros::NodeHandle& nh)
+                            ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:139:19: error: ‘waitForMessage’ is not a member of ‘ros’
+   objectCenters = ros::waitForMessage("/object_XYZ_centers", n);
+                   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:139:19: note: suggested alternative:
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:135:28: note:   ‘ros::topic::waitForMessage’
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, ros::NodeHandle& nh)
+                            ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

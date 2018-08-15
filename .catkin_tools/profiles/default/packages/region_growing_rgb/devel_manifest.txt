@@ -1,0 +1,8 @@
+region_growing_rgb
+/home/dan/dan_ws/devel/.private/region_growing_rgb/lib/region_growing_rgb/region_publisher /home/dan/dan_ws/devel/lib/region_growing_rgb/region_publisher
+/home/dan/dan_ws/devel/.private/region_growing_rgb/lib/region_growing_rgb/region_growing_rgb_segmentation /home/dan/dan_ws/devel/lib/region_growing_rgb/region_growing_rgb_segmentation
+/home/dan/dan_ws/devel/.private/region_growing_rgb/lib/region_growing_rgb/kinect_playground /home/dan/dan_ws/devel/lib/region_growing_rgb/kinect_playground
+/home/dan/dan_ws/devel/.private/region_growing_rgb/lib/region_growing_rgb/kinect_segmentation /home/dan/dan_ws/devel/lib/region_growing_rgb/kinect_segmentation
+/home/dan/dan_ws/devel/.private/region_growing_rgb/lib/pkgconfig/region_growing_rgb.pc /home/dan/dan_ws/devel/lib/pkgconfig/region_growing_rgb.pc
+/home/dan/dan_ws/devel/.private/region_growing_rgb/share/region_growing_rgb/cmake/region_growing_rgbConfig-version.cmake /home/dan/dan_ws/devel/share/region_growing_rgb/cmake/region_growing_rgbConfig-version.cmake
+/home/dan/dan_ws/devel/.private/region_growing_rgb/share/region_growing_rgb/cmake/region_growing_rgbConfig.cmake /home/dan/dan_ws/devel/share/region_growing_rgb/cmake/region_growing_rgbConfig.cmake

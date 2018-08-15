@@ -1,0 +1,10 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:111:33: error: invalid initialization of reference of type ‘pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr& {aka boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >&}’ from expression of type ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’
+     distanceFilter(colored_cloud);
+                                 ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:31:6: error: in passing argument 1 of ‘void distanceFilter(pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr&)’
+ void distanceFilter(pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr& cloud)
+      ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,14 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:113:15: error: no match for ‘operator=’ (operand types are ‘pcl::PointCloud<pcl::PointXYZRGB>’ and ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’)
+     *pclCloud = colored_cloud;
+               ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:113:15: note: candidate is:
+In file included from /usr/include/pcl-1.7/pcl/io/pcd_io.h:43:0,
+                 from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:5:
+/usr/include/pcl-1.7/pcl/point_cloud.h:172:9: note: pcl::PointCloud<pcl::PointXYZRGB>& pcl::PointCloud<pcl::PointXYZRGB>::operator=(const pcl::PointCloud<pcl::PointXYZRGB>&)
+   class PointCloud
+         ^
+/usr/include/pcl-1.7/pcl/point_cloud.h:172:9: note:   no known conversion for argument 1 from ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ to ‘const pcl::PointCloud<pcl::PointXYZRGB>&’
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

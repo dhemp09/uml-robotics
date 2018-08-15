@@ -1,0 +1,95 @@
+In file included from /usr/include/boost/shared_ptr.hpp:17:0,
+                 from /usr/include/boost/format/alt_sstream.hpp:21,
+                 from /usr/include/boost/format/internals.hpp:23,
+                 from /usr/include/boost/format.hpp:38,
+                 from /usr/include/boost/math/policies/error_handling.hpp:31,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/indigo/include/ros/time.h:58,
+                 from /opt/ros/indigo/include/ros/ros.h:38,
+                 from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:1:
+/usr/include/boost/smart_ptr/shared_ptr.hpp: In instantiation of ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = const pcl::PointCloud<pcl::PointXYZRGB>; T = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:147:16:   required from here
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: error: no matching function for call to ‘boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >::shared_ptr(const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >&)’
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note: candidates are:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:472:14: note: template<class Ap> boost::shared_ptr<T>::shared_ptr(Ap, typename boost::detail::sp_enable_if_auto_ptr<Ap, int>::type)
+     explicit shared_ptr( Ap r, typename boost::detail::sp_enable_if_auto_ptr<Ap, int>::type = 0 ): px( r.get() ), pn()
+              ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:472:14: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp: In substitution of ‘template<class Ap> boost::shared_ptr<T>::shared_ptr(Ap, typename boost::detail::sp_enable_if_auto_ptr<Ap, int>::type) [with Ap = boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >]’:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9:   required from ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = const pcl::PointCloud<pcl::PointXYZRGB>; T = pcl::PointCloud<pcl::PointXYZRGB>]’
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:147:16:   required from here
+/usr/include/boost/smart_ptr/shared_ptr.hpp:472:14: error: no type named ‘type’ in ‘struct boost::detail::sp_enable_if_auto_ptr<boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >, int>’
+/usr/include/boost/smart_ptr/shared_ptr.hpp: In instantiation of ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = const pcl::PointCloud<pcl::PointXYZRGB>; T = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:147:16:   required from here
+/usr/include/boost/smart_ptr/shared_ptr.hpp:446:14: note: template<class Y> boost::shared_ptr<T>::shared_ptr(std::auto_ptr<_Tp1>&)
+     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+              ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:446:14: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note:   types ‘std::auto_ptr<Y>’ and ‘const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >’ have incompatible cv-qualifiers
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:439:5: note: template<class Y> boost::shared_ptr<T>::shared_ptr(const boost::shared_ptr<Y>&, boost::shared_ptr<T>::element_type*)
+     shared_ptr( shared_ptr<Y> const & r, element_type * p ) BOOST_NOEXCEPT : px( p ), pn( r.pn )
+     ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:439:5: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note:   candidate expects 2 arguments, 1 provided
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:425:5: note: template<class Y> boost::shared_ptr<T>::shared_ptr(const boost::shared_ptr<Y>&, typename boost::detail::sp_enable_if_convertible<Y, T>::type)
+     shared_ptr( shared_ptr<Y> const & r, typename boost::detail::sp_enable_if_convertible<Y,T>::type = boost::detail::sp_empty() )
+     ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:425:5: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp: In substitution of ‘template<class Y> boost::shared_ptr<T>::shared_ptr(const boost::shared_ptr<Y>&, typename boost::detail::sp_enable_if_convertible<Y, T>::type) [with Y = const pcl::PointCloud<pcl::PointXYZRGB>]’:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9:   required from ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = const pcl::PointCloud<pcl::PointXYZRGB>; T = pcl::PointCloud<pcl::PointXYZRGB>]’
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:147:16:   required from here
+/usr/include/boost/smart_ptr/shared_ptr.hpp:425:5: error: no type named ‘type’ in ‘struct boost::detail::sp_enable_if_convertible<const pcl::PointCloud<pcl::PointXYZRGB>, pcl::PointCloud<pcl::PointXYZRGB> >’
+/usr/include/boost/smart_ptr/shared_ptr.hpp: In instantiation of ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = const pcl::PointCloud<pcl::PointXYZRGB>; T = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:147:16:   required from here
+/usr/include/boost/smart_ptr/shared_ptr.hpp:413:5: note: template<class Y> boost::shared_ptr<T>::shared_ptr(const boost::weak_ptr<Y>&, boost::detail::sp_nothrow_tag)
+     shared_ptr( weak_ptr<Y> const & r, boost::detail::sp_nothrow_tag )
+     ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:413:5: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note:   ‘const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >’ is not derived from ‘const boost::weak_ptr<Y>’
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:404:14: note: template<class Y> boost::shared_ptr<T>::shared_ptr(const boost::weak_ptr<Y>&)
+     explicit shared_ptr( weak_ptr<Y> const & r ): pn( r.pn ) // may throw
+              ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:404:14: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note:   ‘const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >’ is not derived from ‘const boost::weak_ptr<Y>’
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:378:41: note: template<class Y, class D, class A> boost::shared_ptr<T>::shared_ptr(Y*, D, A)
+     template<class Y, class D, class A> shared_ptr( Y * p, D d, A a ): px( p ), pn( p, d, a )
+                                         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:378:41: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note:   mismatched types ‘Y*’ and ‘boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >’
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:363:32: note: template<class Y, class D> boost::shared_ptr<T>::shared_ptr(Y*, D)
+     template<class Y, class D> shared_ptr( Y * p, D d ): px( p ), pn( p, d )
+                                ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:363:32: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note:   mismatched types ‘Y*’ and ‘boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >’
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:352:14: note: template<class Y> boost::shared_ptr<T>::shared_ptr(Y*)
+     explicit shared_ptr( Y * p ): px( p ), pn() // Y must be complete
+              ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:352:14: note:   template argument deduction/substitution failed:
+/usr/include/boost/smart_ptr/shared_ptr.hpp:516:9: note:   mismatched types ‘Y*’ and ‘boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >’
+         this_type(r).swap(*this);
+         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:339:5: note: boost::shared_ptr<T>::shared_ptr() [with T = pcl::PointCloud<pcl::PointXYZRGB>]
+     shared_ptr() BOOST_NOEXCEPT : px( 0 ), pn() // never throws in 1.30+
+     ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:339:5: note:   candidate expects 0 arguments, 1 provided
+/usr/include/boost/smart_ptr/shared_ptr.hpp:328:25: note: boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >::shared_ptr(const boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >&)
+ template<class T> class shared_ptr
+                         ^
+/usr/include/boost/smart_ptr/shared_ptr.hpp:328:25: note:   no known conversion for argument 1 from ‘const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >’ to ‘const boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >&’
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

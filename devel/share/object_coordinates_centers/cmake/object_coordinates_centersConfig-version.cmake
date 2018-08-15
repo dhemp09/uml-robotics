@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/object_coordinates_centers/share/object_coordinates_centers/cmake/object_coordinates_centersConfig-version.cmake

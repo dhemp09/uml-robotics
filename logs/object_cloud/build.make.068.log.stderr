@@ -1,0 +1,27 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void pcl_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:72:66: error: no matching function for call to ‘removeNaNFromPointCloud(const pcl::PointCloud<pcl::PointXYZRGB>&, pcl::PointCloud<pcl::PointXYZRGB>&, pcl::IndicesPtr&)’
+  pcl::removeNaNFromPointCloud(*input, *nanInput, segmentedIndices);
+                                                                  ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:72:66: note: candidates are:
+In file included from /usr/include/pcl-1.7/pcl/filters/filter_indices.h:43:0,
+                 from /usr/include/pcl-1.7/pcl/filters/passthrough.h:43,
+                 from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:9:
+/usr/include/pcl-1.7/pcl/filters/filter.h:60:3: note: template<class PointT> void pcl::removeNaNFromPointCloud(const pcl::PointCloud<PointT>&, pcl::PointCloud<PointT>&, std::vector<int>&)
+   removeNaNFromPointCloud (const pcl::PointCloud<PointT> &cloud_in, 
+   ^
+/usr/include/pcl-1.7/pcl/filters/filter.h:60:3: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:72:66: note:   cannot convert ‘segmentedIndices’ (type ‘pcl::IndicesPtr {aka boost::shared_ptr<std::vector<int> >}’) to type ‘std::vector<int>&’
+  pcl::removeNaNFromPointCloud(*input, *nanInput, segmentedIndices);
+                                                                  ^
+In file included from /usr/include/pcl-1.7/pcl/filters/passthrough.h:43:0,
+                 from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:9:
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h:62:3: note: template<class PointT> void pcl::removeNaNFromPointCloud(const pcl::PointCloud<PointT>&, std::vector<int>&)
+   removeNaNFromPointCloud (const pcl::PointCloud<PointT> &cloud_in, std::vector<int> &index);
+   ^
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h:62:3: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:72:66: note:   cannot convert ‘nanInput.boost::shared_ptr<T>::operator*<pcl::PointCloud<pcl::PointXYZRGB> >()’ (type ‘pcl::PointCloud<pcl::PointXYZRGB>’) to type ‘std::vector<int>&’
+  pcl::removeNaNFromPointCloud(*input, *nanInput, segmentedIndices);
+                                                                  ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

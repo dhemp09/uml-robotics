@@ -1,0 +1,10 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void detections_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:117:23: error: ‘cloud’ was not declared in this scope
+                   if (cloud.at(x, y).rgba != filteredOutColor) {
+                       ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:136:42: error: ‘cloud’ was not declared in this scope
+                   if (mostCommonColor == cloud.at(xPos, yPos).rgba)
+                                          ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

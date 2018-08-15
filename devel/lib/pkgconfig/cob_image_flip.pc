@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/cob_image_flip/lib/pkgconfig/cob_image_flip.pc

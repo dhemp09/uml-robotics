@@ -1,0 +1,7 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:164:79: error: ‘pcl_cb’ was not declared in this scope
+   ros::Subscriber pcl_sub = n.subscribe("/camera/depth_registered/points", 1, pcl_cb);
+                                                                               ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,16 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void pcl_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:40:2: error: ‘Planar’ was not declared in this scope
+  Planar segmentation
+  ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:40:9: error: expected ‘;’ before ‘segmentation’
+  Planar segmentation
+         ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:49:28: error: ‘coefficients’ was not declared in this scope
+    seg.segment (*inliers, *coefficients);
+                            ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:74:2: error: expected primary-expression before ‘new’
+  new pcl::search::KdTree<pcl::PointXYZRGB>);
+  ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

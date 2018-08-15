@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/region_growing_rgb/share/region_growing_rgb/cmake/region_growing_rgbConfig-version.cmake

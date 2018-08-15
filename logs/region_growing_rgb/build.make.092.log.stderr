@@ -1,0 +1,28 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:128:35: error: no matching function for call to ‘toROSMsg(pcl::PointCloud<pcl::PointXYZRGB>::Ptr&, sensor_msgs::PointCloud2&)’
+     pcl::toROSMsg(pclCloud, output);
+                                   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:128:35: note: candidates are:
+In file included from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:11:0:
+/opt/ros/indigo/include/pcl_conversions/pcl_conversions.h:487:8: note: void pcl::toROSMsg(const PointCloud2&, sensor_msgs::Image&)
+   void toROSMsg(const sensor_msgs::PointCloud2 &cloud, sensor_msgs::Image &image)
+        ^
+/opt/ros/indigo/include/pcl_conversions/pcl_conversions.h:487:8: note:   no known conversion for argument 1 from ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ to ‘const PointCloud2& {aka const sensor_msgs::PointCloud2_<std::allocator<void> >&}’
+/opt/ros/indigo/include/pcl_conversions/pcl_conversions.h:507:3: note: template<class T> void pcl::toROSMsg(const pcl::PointCloud<PointT>&, sensor_msgs::Image&)
+   toROSMsg (const pcl::PointCloud<T> &cloud, sensor_msgs::Image& msg)
+   ^
+/opt/ros/indigo/include/pcl_conversions/pcl_conversions.h:507:3: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:128:35: note:   ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ is not derived from ‘const pcl::PointCloud<PointT>’
+     pcl::toROSMsg(pclCloud, output);
+                                   ^
+In file included from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:11:0:
+/opt/ros/indigo/include/pcl_conversions/pcl_conversions.h:539:8: note: template<class T> void pcl::toROSMsg(const pcl::PointCloud<PointT>&, sensor_msgs::PointCloud2&)
+   void toROSMsg(const pcl::PointCloud<T> &pcl_cloud, sensor_msgs::PointCloud2 &cloud)
+        ^
+/opt/ros/indigo/include/pcl_conversions/pcl_conversions.h:539:8: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:128:35: note:   ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ is not derived from ‘const pcl::PointCloud<PointT>’
+     pcl::toROSMsg(pclCloud, output);
+                                   ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,72 @@
+In file included from /usr/include/c++/4.8/backward/strstream:51:0,
+                 from /usr/include/vtk-5.8/vtkIOStream.h:112,
+                 from /usr/include/vtk-5.8/vtkSystemIncludes.h:40,
+                 from /usr/include/vtk-5.8/vtkIndent.h:24,
+                 from /usr/include/vtk-5.8/vtkObjectBase.h:43,
+                 from /usr/include/vtk-5.8/vtkSmartPointerBase.h:26,
+                 from /usr/include/vtk-5.8/vtkSmartPointer.h:23,
+                 from /usr/include/pcl-1.7/pcl/visualization/point_cloud_geometry_handlers.h:48,
+                 from /usr/include/pcl-1.7/pcl/visualization/point_cloud_handlers.h:41,
+                 from /usr/include/pcl-1.7/pcl/visualization/common/actor_map.h:40,
+                 from /usr/include/pcl-1.7/pcl/visualization/pcl_visualizer.h:47,
+                 from /usr/include/pcl-1.7/pcl/visualization/cloud_viewer.h:39,
+                 from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:8:
+/usr/include/c++/4.8/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘pclCloud segment(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:61:31: error: ‘input’ was not declared in this scope
+      vector<bool> boolIndices(input->points.size());
+                               ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:77:37: error: no matching function for call to ‘pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal>::setInputCloud(const Ptr&)’
+    normal_estimator.setInputCloud (p);
+                                     ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:77:37: note: candidate is:
+In file included from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:27:0:
+/usr/include/pcl-1.7/pcl/features/normal_3d.h:286:7: note: void pcl::NormalEstimation<PointInT, PointOutT>::setInputCloud(const PointCloudConstPtr&) [with PointInT = pcl::PointXYZ; PointOutT = pcl::Normal; pcl::NormalEstimation<PointInT, PointOutT>::PointCloudConstPtr = boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZ> >]
+       setInputCloud (const PointCloudConstPtr &cloud)
+       ^
+/usr/include/pcl-1.7/pcl/features/normal_3d.h:286:7: note:   no known conversion for argument 1 from ‘const Ptr {aka const boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ to ‘const PointCloudConstPtr& {aka const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZ> >&}’
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:80:36: error: conflicting declaration ‘pcl::PassThrough<pcl::PointXYZ> pass’
+    pcl::PassThrough<pcl::PointXYZ> pass;
+                                    ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:55:41: error: ‘pass’ has a previous declaration as ‘pcl::PassThrough<pcl::PointXYZRGB> pass’
+      pcl::PassThrough<pcl::PointXYZRGB> pass;
+                                         ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:91:24: error: no matching function for call to ‘pcl::RegionGrowing<pcl::PointXYZ, pcl::Normal>::setInputCloud(const Ptr&)’
+    reg.setInputCloud (p);
+                        ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:91:24: note: candidate is:
+In file included from /usr/include/pcl-1.7/pcl/common/io.h:45:0,
+                 from /usr/include/pcl-1.7/pcl/io/file_io.h:42,
+                 from /usr/include/pcl-1.7/pcl/io/pcd_io.h:44,
+                 from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:5:
+/usr/include/pcl-1.7/pcl/pcl_base.h:95:7: note: void pcl::PCLBase<PointT>::setInputCloud(const PointCloudConstPtr&) [with PointT = pcl::PointXYZ; pcl::PCLBase<PointT>::PointCloudConstPtr = boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZ> >]
+       setInputCloud (const PointCloudConstPtr &cloud);
+       ^
+/usr/include/pcl-1.7/pcl/pcl_base.h:95:7: note:   no known conversion for argument 1 from ‘const Ptr {aka const boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ to ‘const PointCloudConstPtr& {aka const boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZ> >&}’
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void detections_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:116:27: error: base operand of ‘->’ has non-pointer type ‘pclCloud {aka pcl::PointCloud<pcl::PointXYZRGB>}’
+                  if (cloud->at(x, y).rgba != filteredOutColor) {
+                           ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:117:43: error: base operand of ‘->’ has non-pointer type ‘pclCloud {aka pcl::PointCloud<pcl::PointXYZRGB>}’
+                      colorSet.insert(cloud->at(x, y).rgba);
+                                           ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:118:46: error: base operand of ‘->’ has non-pointer type ‘pclCloud {aka pcl::PointCloud<pcl::PointXYZRGB>}’
+                      colorVec.push_back(cloud->at(x, y).rgba);
+                                              ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:135:46: error: base operand of ‘->’ has non-pointer type ‘pclCloud {aka pcl::PointCloud<pcl::PointXYZRGB>}’
+                  if (mostCommonColor == cloud->at(xPos, yPos).rgba)
+                                              ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:136:44: error: base operand of ‘->’ has non-pointer type ‘pclCloud {aka pcl::PointCloud<pcl::PointXYZRGB>}’
+                      output.push_back(cloud->at(xPos, yPos));
+                                            ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:143:1: error: a function-definition is not allowed here before ‘{’ token
+ {
+ ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:153:1: error: expected ‘}’ at end of input
+ }
+ ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

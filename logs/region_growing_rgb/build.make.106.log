@@ -1,0 +1,4 @@
+[ 25%] Built target kinect_playground
+[ 50%] Built target kinect_segmentation
+[ 75%] Built target region_growing_rgb_segmentation
+[100%] Built target region_publisher

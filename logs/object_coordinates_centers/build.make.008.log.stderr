@@ -1,0 +1,13 @@
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:27:6: error: ‘waitForMessage’ is not a member of ‘ros’
+  m = ros::waitForMessage("/camera/depth_registered/points", n); 
+      ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:27:6: note: suggested alternative:
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:135:28: note:   ‘ros::topic::waitForMessage’
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, ros::NodeHandle& nh)
+                            ^
+make[2]: *** [CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pointXYZ.dir/all] Error 2
+make: *** [all] Error 2

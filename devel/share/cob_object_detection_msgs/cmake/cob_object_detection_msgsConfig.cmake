@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/cob_object_detection_msgs/share/cob_object_detection_msgs/cmake/cob_object_detection_msgsConfig.cmake

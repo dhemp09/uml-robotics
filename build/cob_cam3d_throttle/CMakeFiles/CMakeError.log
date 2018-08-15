@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec155130184/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec155130184.dir/build.make CMakeFiles/cmTryCompileExec155130184.dir/build
+make[1]: Entering directory `/home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec155130184.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec155130184.dir/CheckSymbolExists.c.o   -c /home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec155130184
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec155130184.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec155130184.dir/CheckSymbolExists.c.o  -o cmTryCompileExec155130184 -rdynamic 
+CMakeFiles/cmTryCompileExec155130184.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec155130184] Error 1
+make: *** [cmTryCompileExec155130184/fast] Error 2
+
+File /home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4071735975/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4071735975.dir/build.make CMakeFiles/cmTryCompileExec4071735975.dir/build
+make[1]: Entering directory `/home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4071735975.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec4071735975.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4071735975
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4071735975.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec4071735975.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4071735975 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/dan/dan_ws/build/cob_cam3d_throttle/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec4071735975] Error 1
+make: *** [cmTryCompileExec4071735975/fast] Error 2
+
+

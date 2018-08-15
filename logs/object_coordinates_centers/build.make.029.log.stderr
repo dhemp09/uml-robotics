@@ -1,0 +1,14 @@
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp: In function ‘void callBack(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:51:3: error: ‘cerr’ was not declared in this scope
+   cerr << centers.size();
+   ^
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:51:3: note: suggested alternative:
+In file included from /opt/ros/indigo/include/ros/time.h:54:0,
+                 from /opt/ros/indigo/include/ros/ros.h:38,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/usr/include/c++/4.8/iostream:62:18: note:   ‘std::cerr’
+   extern ostream cerr;  /// Linked to standard error (unbuffered)
+                  ^
+make[2]: *** [CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pointXYZ.dir/all] Error 2
+make: *** [all] Error 2

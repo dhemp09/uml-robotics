@@ -1,0 +1,56 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:29:1: error: ‘PointCloud’ does not name a type
+ PointCloud<PointXYZRGB>::Ptr pclCloud;
+ ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void distanceFilter(pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr&)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:33:57: error: expected type-specifier before ‘PointCloud’
+     pcl::PointCloud<pcl::PointXYZRGB>::Ptr resCloud(new PointCloud<PointXYZRGB>);
+                                                         ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:46:5: error: ‘PointCloud’ was not declared in this scope
+     PointCloud<PointXYZRGB>::ConstPtr tmp(resCloud);
+     ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:46:5: note: suggested alternatives:
+In file included from /usr/include/pcl-1.7/pcl/io/pcd_io.h:43:0,
+                 from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:5:
+/usr/include/pcl-1.7/pcl/point_cloud.h:65:36: note:   ‘pcl::PointCloud’
+   template <typename PointT> class PointCloud;
+                                    ^
+In file included from /opt/ros/indigo/include/tf/transform_listener.h:35:0,
+                 from /opt/ros/indigo/include/pcl_ros/transforms.h:43,
+                 from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:14:
+/opt/ros/indigo/include/sensor_msgs/PointCloud.h:60:59: note:   ‘sensor_msgs::PointCloud’
+ typedef ::sensor_msgs::PointCloud_<std::allocator<void> > PointCloud;
+                                                           ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:46:16: error: ‘PointXYZRGB’ was not declared in this scope
+     PointCloud<PointXYZRGB>::ConstPtr tmp(resCloud);
+                ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:46:16: note: suggested alternative:
+In file included from /usr/include/pcl-1.7/pcl/point_types.h:311:0,
+                 from /home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:4:
+/usr/include/pcl-1.7/pcl/impl/point_types.hpp:559:24: note:   ‘pcl::PointXYZRGB’
+   struct EIGEN_ALIGN16 PointXYZRGB : public _PointXYZRGB
+                        ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:46:28: error: ‘::ConstPtr’ has not been declared
+     PointCloud<PointXYZRGB>::ConstPtr tmp(resCloud);
+                            ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:46:39: error: expected ‘;’ before ‘tmp’
+     PointCloud<PointXYZRGB>::ConstPtr tmp(resCloud);
+                                       ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:47:5: error: ‘pclCloud’ was not declared in this scope
+     pclCloud = tmp;
+     ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:47:16: error: ‘tmp’ was not declared in this scope
+     pclCloud = tmp;
+                ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:111:33: error: invalid initialization of reference of type ‘pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr& {aka boost::shared_ptr<const pcl::PointCloud<pcl::PointXYZRGB> >&}’ from expression of type ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’
+     distanceFilter(colored_cloud);
+                                 ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:31:6: error: in passing argument 1 of ‘void distanceFilter(pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr&)’
+ void distanceFilter(pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr& cloud)
+      ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:117:20: error: ‘pclCloud’ was not declared in this scope
+     pcl::toROSMsg(*pclCloud, output);
+                    ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,8 @@
+prefix=/home/dan/dan_ws/devel/.private/object_detect_sub
+
+Name: object_detect_sub
+Description: Description of object_detect_sub
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dan/dan_ws/devel/.private/object_detect_sub/lib 
+Requires: cob_perception_msgs roscpp rospy tf std_msgs

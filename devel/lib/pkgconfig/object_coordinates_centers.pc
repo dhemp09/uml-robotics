@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/object_coordinates_centers/lib/pkgconfig/object_coordinates_centers.pc

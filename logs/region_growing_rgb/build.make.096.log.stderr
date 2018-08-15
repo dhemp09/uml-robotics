@@ -1,0 +1,39 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:118:46: error: request for member ‘size’ in ‘clusters.std::vector<_Tp, _Alloc>::operator[]<pcl::PointIndices, std::allocator<pcl::PointIndices> >(((std::vector<pcl::PointIndices>::size_type)j)).pcl::PointIndices::indices.std::vector<_Tp, _Alloc>::operator[]<int, std::allocator<int> >(((std::vector<int>::size_type)k))’, which is of non-class type ‘int’
+    for(int l = 0; l < clusters[j].indices[k].size(); l++){
+                                              ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:119:82: error: request for member ‘x’ in ‘clusters.std::vector<_Tp, _Alloc>::operator[]<pcl::PointIndices, std::allocator<pcl::PointIndices> >(((std::vector<pcl::PointIndices>::size_type)j)).pcl::PointIndices::indices.std::vector<_Tp, _Alloc>::operator[]<int, std::allocator<int> >(((std::vector<int>::size_type)k))’, which is of non-class type ‘int’
+     if(objectCenters.points[i].x == colored_cloud->points[clusters[j].indices[k].x
+                                                                                  ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:120:82: error: request for member ‘y’ in ‘clusters.std::vector<_Tp, _Alloc>::operator[]<pcl::PointIndices, std::allocator<pcl::PointIndices> >(((std::vector<pcl::PointIndices>::size_type)j)).pcl::PointIndices::indices.std::vector<_Tp, _Alloc>::operator[]<int, std::allocator<int> >(((std::vector<int>::size_type)k))’, which is of non-class type ‘int’
+     && objectCenters.points[i].y == colored_cloud->points[clusters[j].indices[k].y
+                                                                                  ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:121:82: error: request for member ‘z’ in ‘clusters.std::vector<_Tp, _Alloc>::operator[]<pcl::PointIndices, std::allocator<pcl::PointIndices> >(((std::vector<pcl::PointIndices>::size_type)j)).pcl::PointIndices::indices.std::vector<_Tp, _Alloc>::operator[]<int, std::allocator<int> >(((std::vector<int>::size_type)k))’, which is of non-class type ‘int’
+     && objectCenters.points[i].z == colored_cloud->points[clusters[j].indices[k].z){
+                                                                                  ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:121:83: error: expected ‘]’ before ‘)’ token
+     && objectCenters.points[i].z == colored_cloud->points[clusters[j].indices[k].z){
+                                                                                   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:121:83: error: expected ‘]’ before ‘)’ token
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:121:83: error: expected ‘]’ before ‘)’ token
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:122:79: error: request for member ‘r’ in ‘clusters.std::vector<_Tp, _Alloc>::operator[]<pcl::PointIndices, std::allocator<pcl::PointIndices> >(((std::vector<pcl::PointIndices>::size_type)j)).pcl::PointIndices::indices.std::vector<_Tp, _Alloc>::operator[]<int, std::allocator<int> >(((std::vector<int>::size_type)k))’, which is of non-class type ‘int’
+      objectCenters.points[i].r = colored_cloud->points[clusters[j].indices[k].r;
+                                                                               ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:122:80: error: expected ‘]’ before ‘;’ token
+      objectCenters.points[i].r = colored_cloud->points[clusters[j].indices[k].r;
+                                                                                ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:123:79: error: request for member ‘g’ in ‘clusters.std::vector<_Tp, _Alloc>::operator[]<pcl::PointIndices, std::allocator<pcl::PointIndices> >(((std::vector<pcl::PointIndices>::size_type)j)).pcl::PointIndices::indices.std::vector<_Tp, _Alloc>::operator[]<int, std::allocator<int> >(((std::vector<int>::size_type)k))’, which is of non-class type ‘int’
+      objectCenters.points[i].g = colored_cloud->points[clusters[j].indices[k].g;
+                                                                               ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:123:80: error: expected ‘]’ before ‘;’ token
+      objectCenters.points[i].g = colored_cloud->points[clusters[j].indices[k].g;
+                                                                                ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:124:79: error: request for member ‘b’ in ‘clusters.std::vector<_Tp, _Alloc>::operator[]<pcl::PointIndices, std::allocator<pcl::PointIndices> >(((std::vector<pcl::PointIndices>::size_type)j)).pcl::PointIndices::indices.std::vector<_Tp, _Alloc>::operator[]<int, std::allocator<int> >(((std::vector<int>::size_type)k))’, which is of non-class type ‘int’
+      objectCenters.points[i].b = colored_cloud->points[clusters[j].indices[k].b;
+                                                                               ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:124:80: error: expected ‘]’ before ‘;’ token
+      objectCenters.points[i].b = colored_cloud->points[clusters[j].indices[k].b;
+                                                                                ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

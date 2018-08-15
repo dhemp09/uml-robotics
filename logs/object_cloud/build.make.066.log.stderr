@@ -1,0 +1,7 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void pcl_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:71:23: error: expected type-specifier before ‘vector’
+  vector<int>index(new vector);
+                       ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,7 @@
+[35m[1mScanning dependencies of target kinect_playground
+[ 25%] Built target region_growing_rgb_segmentation
+[0m[ 50%] [ 75%] Built target region_publisher
+Built target kinect_segmentation
+[100%] [32mBuilding CXX object CMakeFiles/kinect_playground.dir/src/kinect_playground.cpp.o
+[0m[31m[1mLinking CXX executable /home/dan/dan_ws/devel/.private/region_growing_rgb/lib/region_growing_rgb/kinect_playground
+[0m[100%] Built target kinect_playground

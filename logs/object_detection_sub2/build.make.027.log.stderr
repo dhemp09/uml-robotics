@@ -1,0 +1,83 @@
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp: In function ‘void callBack(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:10:18: error: ‘PointXYZRGB’ is not a member of ‘pcl’
+  pcl::PointCloud<pcl::PointXYZRGB> centers;
+                  ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:10:18: error: ‘PointXYZRGB’ is not a member of ‘pcl’
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:10:34: error: template argument 1 is invalid
+  pcl::PointCloud<pcl::PointXYZRGB> centers;
+                                  ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:10:43: error: invalid type in declaration before ‘;’ token
+  pcl::PointCloud<pcl::PointXYZRGB> centers;
+                                           ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:12:11: error: request for member ‘push_back’ in ‘centers’, which is of non-class type ‘int’
+   centers.push_back(at(msg->poses[i].position.x, msg->poses[i].position.y));
+           ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:12:74: error: ‘at’ was not declared in this scope
+   centers.push_back(at(msg->poses[i].position.x, msg->poses[i].position.y));
+                                                                          ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:12:74: note: suggested alternative:
+In file included from /usr/include/boost/mpl/vector/aux_/at.hpp:17:0,
+                 from /usr/include/boost/mpl/vector/vector0.hpp:17,
+                 from /usr/include/boost/mpl/vector/vector10.hpp:18,
+                 from /usr/include/boost/mpl/vector/vector20.hpp:18,
+                 from /usr/include/boost/mpl/vector.hpp:36,
+                 from /usr/include/boost/math/policies/policy.hpp:14,
+                 from /usr/include/boost/math/policies/error_handling.hpp:19,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/indigo/include/ros/time.h:58,
+                 from /opt/ros/indigo/include/ros/ros.h:38,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:1:
+/usr/include/boost/mpl/at_fwd.hpp:20:50: note:   ‘boost::mpl::at’
+ template< typename Sequence, typename N > struct at;
+                                                  ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:21:20: error: ‘sensor_msgs’ was not declared in this scope
+  pub = n.advertise<sensor_msgs::PointCloud2>("/object_XYZ_centers", 1);
+                    ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:21:10: error: parse error in template argument list
+  pub = n.advertise<sensor_msgs::PointCloud2>("/object_XYZ_centers", 1);
+          ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:21:70: error: no matching function for call to ‘ros::NodeHandle::advertise(const char [20], int)’
+  pub = n.advertise<sensor_msgs::PointCloud2>("/object_XYZ_centers", 1);
+                                                                      ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:21:70: note: candidates are:
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/node_handle.h:248:15: note: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)
+     Publisher advertise(const std::string& topic, uint32_t queue_size, bool latch = false)
+               ^
+/opt/ros/indigo/include/ros/node_handle.h:248:15: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:21:70: error: template argument 1 is invalid
+  pub = n.advertise<sensor_msgs::PointCloud2>("/object_XYZ_centers", 1);
+                                                                      ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/node_handle.h:314:13: note: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)
+   Publisher advertise(const std::string& topic, uint32_t queue_size,
+             ^
+/opt/ros/indigo/include/ros/node_handle.h:314:13: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:21:70: error: template argument 1 is invalid
+  pub = n.advertise<sensor_msgs::PointCloud2>("/object_XYZ_centers", 1);
+                                                                      ^
+In file included from /opt/ros/indigo/include/ros/serialization.h:37:0,
+                 from /opt/ros/indigo/include/ros/publisher.h:34,
+                 from /opt/ros/indigo/include/ros/node_handle.h:32,
+                 from /opt/ros/indigo/include/ros/ros.h:45,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = int]’:
+/opt/ros/indigo/include/ros/message_traits.h:255:104:   required from ‘const char* ros::message_traits::md5sum(const M&) [with M = int]’
+/opt/ros/indigo/include/ros/publisher.h:112:7:   required from ‘void ros::Publisher::publish(const M&) const [with M = int]’
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:14:21:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:126:34: error: request for member ‘__getMD5Sum’ in ‘m’, which is of non-class type ‘const int’
+     return m.__getMD5Sum().c_str();
+                                  ^
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::DataType<M>::value(const M&) [with M = int]’:
+/opt/ros/indigo/include/ros/message_traits.h:264:106:   required from ‘const char* ros::message_traits::datatype(const M&) [with M = int]’
+/opt/ros/indigo/include/ros/publisher.h:112:7:   required from ‘void ros::Publisher::publish(const M&) const [with M = int]’
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:14:21:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:143:36: error: request for member ‘__getDataType’ in ‘m’, which is of non-class type ‘const int’
+     return m.__getDataType().c_str();
+                                    ^
+make[2]: *** [CMakeFiles/pub.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pub.dir/all] Error 2
+make: *** [all] Error 2

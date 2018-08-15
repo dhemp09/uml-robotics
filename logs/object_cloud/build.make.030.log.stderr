@@ -1,0 +1,10 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘pclCloud segment(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:41:41: error: expression cannot be used as a function
+  if (!input->empty() && input->is_dense()){
+                                         ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:105:14: error: could not convert ‘input’ from ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ to ‘pclCloud {aka pcl::PointCloud<pcl::PointXYZRGB>}’
+  else return input;
+              ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,74 @@
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:9:1: error: ‘Marker’ does not name a type
+ Marker m;
+ ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp: In function ‘void callBack(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:13:11: error: ‘const struct cob_perception_msgs::DetectionArray_<std::allocator<void> >’ has no member named ‘empty’
+  if(!msg->empty)
+           ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:14:27: error: ‘const struct cob_perception_msgs::DetectionArray_<std::allocator<void> >’ has no member named ‘size’
+   for(int i = 0; i < msg->size; i++)
+                           ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:15:19: error: invalid use of ‘boost::detail::sp_array_access<const cob_perception_msgs::DetectionArray_<std::allocator<void> > >::type {aka void}’
+    cerr << *msg[i].pose << "    ";
+                   ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp: In function ‘int main(int, char**)’:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:9: error: ‘m’ was not declared in this scope
+         m = topic::waitForMessage("/tableMarkers", n);
+         ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:53: error: no matching function for call to ‘waitForMessage(const char [14], ros::NodeHandle&)’
+         m = topic::waitForMessage("/tableMarkers", n);
+                                                     ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:53: note: candidates are:
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:86:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&, ros::NodeHandle&, ros::Duration)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, NodeHandle& nh, ros::Duration timeout)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:86:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:53: note:   candidate expects 3 arguments, 2 provided
+         m = topic::waitForMessage("/tableMarkers", n);
+                                                     ^
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:105:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:105:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:53: note:   candidate expects 1 argument, 2 provided
+         m = topic::waitForMessage("/tableMarkers", n);
+                                                     ^
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:120:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&, ros::Duration)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, ros::Duration timeout)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:120:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:53: note:   cannot convert ‘n’ (type ‘ros::NodeHandle’) to type ‘ros::Duration’
+         m = topic::waitForMessage("/tableMarkers", n);
+                                                     ^
+In file included from /opt/ros/indigo/include/ros/ros.h:55:0,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:1:
+/opt/ros/indigo/include/ros/topic.h:135:28: note: template<class M> boost::shared_ptr<const M> ros::topic::waitForMessage(const string&, ros::NodeHandle&)
+ boost::shared_ptr<M const> waitForMessage(const std::string& topic, ros::NodeHandle& nh)
+                            ^
+/opt/ros/indigo/include/ros/topic.h:135:28: note:   template argument deduction/substitution failed:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:22:53: note:   couldn't deduce template parameter ‘M’
+         m = topic::waitForMessage("/tableMarkers", n);
+                                                     ^
+In file included from /usr/include/boost/shared_ptr.hpp:17:0,
+                 from /usr/include/boost/format/alt_sstream.hpp:21,
+                 from /usr/include/boost/format/internals.hpp:23,
+                 from /usr/include/boost/format.hpp:38,
+                 from /usr/include/boost/math/policies/error_handling.hpp:31,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/indigo/include/ros/time.h:58,
+                 from /opt/ros/indigo/include/ros/ros.h:38,
+                 from /home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:1:
+/usr/include/boost/smart_ptr/shared_ptr.hpp: In instantiation of ‘typename boost::detail::sp_array_access<T>::type boost::shared_ptr<T>::operator[](std::ptrdiff_t) const [with T = const cob_perception_msgs::DetectionArray_<std::allocator<void> >; typename boost::detail::sp_array_access<T>::type = void; std::ptrdiff_t = long int]’:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:15:18:   required from here
+/usr/include/boost/smart_ptr/shared_ptr.hpp:663:22: error: return-statement with a value, in function returning 'void' [-fpermissive]
+         return px[ i ];
+                      ^
+make[2]: *** [CMakeFiles/sub.dir/src/object_detect_sub_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/sub.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,13 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:85:4: error: stray ‘`’ in program
+    pass2.filte`r (*segmentedIndices);
+    ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void pcl_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:85:10: error: ‘class pcl::PassThrough<pcl::PointXYZRGB>’ has no member named ‘filte’
+    pass2.filte`r (*segmentedIndices);
+          ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:85:16: error: expected ‘;’ before ‘r’
+    pass2.filte`r (*segmentedIndices);
+                ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

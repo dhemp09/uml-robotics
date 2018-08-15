@@ -1,0 +1,71 @@
+In file included from /opt/ros/indigo/include/ros/serialization.h:37:0,
+                 from /opt/ros/indigo/include/ros/publisher.h:34,
+                 from /opt/ros/indigo/include/ros/node_handle.h:32,
+                 from /opt/ros/indigo/include/ros/ros.h:45,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/opt/ros/indigo/include/ros/message_traits.h:255:104:   required from ‘const char* ros::message_traits::md5sum(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/opt/ros/indigo/include/ros/publisher.h:79:7:   required from ‘void ros::Publisher::publish(const boost::shared_ptr<X>&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:17:21:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:126:34: error: ‘const class pcl::PointCloud<pcl::PointXYZRGB>’ has no member named ‘__getMD5Sum’
+     return m.__getMD5Sum().c_str();
+                                  ^
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::DataType<M>::value(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/opt/ros/indigo/include/ros/message_traits.h:264:106:   required from ‘const char* ros::message_traits::datatype(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/opt/ros/indigo/include/ros/publisher.h:79:7:   required from ‘void ros::Publisher::publish(const boost::shared_ptr<X>&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:17:21:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:143:36: error: ‘const class pcl::PointCloud<pcl::PointXYZRGB>’ has no member named ‘__getDataType’
+     return m.__getDataType().c_str();
+                                    ^
+In file included from /opt/ros/indigo/include/ros/publisher.h:34:0,
+                 from /opt/ros/indigo/include/ros/node_handle.h:32,
+                 from /opt/ros/indigo/include/ros/ros.h:45,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/serialization.h: In instantiation of ‘static uint32_t ros::serialization::Serializer<T>::serializedLength(typename boost::call_traits<T>::param_type) [with T = pcl::PointCloud<pcl::PointXYZRGB>; uint32_t = unsigned int; typename boost::call_traits<T>::param_type = const pcl::PointCloud<pcl::PointXYZRGB>&]’:
+/opt/ros/indigo/include/ros/serialization.h:172:43:   required from ‘uint32_t ros::serialization::serializationLength(const T&) [with T = pcl::PointCloud<pcl::PointXYZRGB>; uint32_t = unsigned int]’
+/opt/ros/indigo/include/ros/serialization.h:848:45:   required from ‘ros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/opt/ros/indigo/include/ros/publisher.h:88:68:   required from ‘void ros::Publisher::publish(const boost::shared_ptr<X>&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:17:21:   required from here
+/opt/ros/indigo/include/ros/serialization.h:144:34: error: ‘const class pcl::PointCloud<pcl::PointXYZRGB>’ has no member named ‘serializationLength’
+     return t.serializationLength();
+                                  ^
+/opt/ros/indigo/include/ros/serialization.h: In instantiation of ‘static void ros::serialization::Serializer<T>::write(Stream&, typename boost::call_traits<T>::param_type) [with Stream = ros::serialization::OStream; T = pcl::PointCloud<pcl::PointXYZRGB>; typename boost::call_traits<T>::param_type = const pcl::PointCloud<pcl::PointXYZRGB>&]’:
+/opt/ros/indigo/include/ros/serialization.h:154:33:   required from ‘void ros::serialization::serialize(Stream&, const T&) [with T = pcl::PointCloud<pcl::PointXYZRGB>; Stream = ros::serialization::OStream]’
+/opt/ros/indigo/include/ros/serialization.h:855:23:   required from ‘ros::SerializedMessage ros::serialization::serializeMessage(const M&) [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/opt/ros/indigo/include/ros/publisher.h:88:68:   required from ‘void ros::Publisher::publish(const boost::shared_ptr<X>&) const [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:17:21:   required from here
+/opt/ros/indigo/include/ros/serialization.h:127:5: error: ‘const class pcl::PointCloud<pcl::PointXYZRGB>’ has no member named ‘serialize’
+     t.serialize(stream.getData(), 0);
+     ^
+In file included from /opt/ros/indigo/include/ros/serialization.h:37:0,
+                 from /opt/ros/indigo/include/ros/publisher.h:34,
+                 from /opt/ros/indigo/include/ros/node_handle.h:32,
+                 from /opt/ros/indigo/include/ros/ros.h:45,
+                 from /home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:1:
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::MD5Sum<M>::value() [with M = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/opt/ros/indigo/include/ros/message_traits.h:228:103:   required from ‘const char* ros::message_traits::md5sum() [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/opt/ros/indigo/include/ros/advertise_options.h:92:40:   required from ‘void ros::AdvertiseOptions::init(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&) [with M = pcl::PointCloud<pcl::PointXYZRGB>; std::string = std::basic_string<char>; uint32_t = unsigned int; ros::SubscriberStatusCallback = boost::function<void(const ros::SingleSubscriberPublisher&)>]’
+/opt/ros/indigo/include/ros/node_handle.h:251:7:   required from ‘ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool) [with M = pcl::PointCloud<pcl::PointXYZRGB>; std::string = std::basic_string<char>; uint32_t = unsigned int]’
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:24:80:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:121:29: error: ‘__s_getMD5Sum’ is not a member of ‘pcl::PointCloud<pcl::PointXYZRGB>’
+     return M::__s_getMD5Sum().c_str();
+                             ^
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::DataType<M>::value() [with M = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/opt/ros/indigo/include/ros/message_traits.h:237:105:   required from ‘const char* ros::message_traits::datatype() [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/opt/ros/indigo/include/ros/advertise_options.h:93:44:   required from ‘void ros::AdvertiseOptions::init(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&) [with M = pcl::PointCloud<pcl::PointXYZRGB>; std::string = std::basic_string<char>; uint32_t = unsigned int; ros::SubscriberStatusCallback = boost::function<void(const ros::SingleSubscriberPublisher&)>]’
+/opt/ros/indigo/include/ros/node_handle.h:251:7:   required from ‘ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool) [with M = pcl::PointCloud<pcl::PointXYZRGB>; std::string = std::basic_string<char>; uint32_t = unsigned int]’
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:24:80:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:138:31: error: ‘__s_getDataType’ is not a member of ‘pcl::PointCloud<pcl::PointXYZRGB>’
+     return M::__s_getDataType().c_str();
+                               ^
+/opt/ros/indigo/include/ros/message_traits.h: In instantiation of ‘static const char* ros::message_traits::Definition<M>::value() [with M = pcl::PointCloud<pcl::PointXYZRGB>]’:
+/opt/ros/indigo/include/ros/message_traits.h:246:107:   required from ‘const char* ros::message_traits::definition() [with M = pcl::PointCloud<pcl::PointXYZRGB>]’
+/opt/ros/indigo/include/ros/advertise_options.h:94:56:   required from ‘void ros::AdvertiseOptions::init(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&) [with M = pcl::PointCloud<pcl::PointXYZRGB>; std::string = std::basic_string<char>; uint32_t = unsigned int; ros::SubscriberStatusCallback = boost::function<void(const ros::SingleSubscriberPublisher&)>]’
+/opt/ros/indigo/include/ros/node_handle.h:251:7:   required from ‘ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool) [with M = pcl::PointCloud<pcl::PointXYZRGB>; std::string = std::basic_string<char>; uint32_t = unsigned int]’
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:24:80:   required from here
+/opt/ros/indigo/include/ros/message_traits.h:155:40: error: ‘__s_getMessageDefinition’ is not a member of ‘pcl::PointCloud<pcl::PointXYZRGB>’
+     return M::__s_getMessageDefinition().c_str();
+                                        ^
+make[2]: *** [CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pointXYZ.dir/all] Error 2
+make: *** [all] Error 2

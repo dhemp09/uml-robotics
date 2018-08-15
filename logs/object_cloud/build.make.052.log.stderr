@@ -1,0 +1,7 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void detections_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:125:11: error: ‘const struct cob_perception_msgs::DetectionArray_<std::allocator<void> >’ has no member named ‘is_dense’
+ if(input->is_dense){
+           ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

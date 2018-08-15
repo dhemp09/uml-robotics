@@ -1,0 +1,13 @@
+CMakeFiles/sub.dir/src/object_detect_sub_node.cpp.o: In function `main':
+object_detect_sub_node.cpp:(.text+0x61): undefined reference to `ros::init(int&, char**, std::string const&, unsigned int)'
+object_detect_sub_node.cpp:(.text+0xbd): undefined reference to `ros::NodeHandle::NodeHandle(std::string const&, std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > > const&)'
+object_detect_sub_node.cpp:(.text+0xe2): undefined reference to `ros::spinOnce()'
+object_detect_sub_node.cpp:(.text+0xe7): undefined reference to `ros::ok()'
+object_detect_sub_node.cpp:(.text+0xff): undefined reference to `ros::NodeHandle::~NodeHandle()'
+object_detect_sub_node.cpp:(.text+0x15d): undefined reference to `ros::NodeHandle::~NodeHandle()'
+object_detect_sub_node.cpp:(.text+0x18e): undefined reference to `ros::NodeHandle::~NodeHandle()'
+object_detect_sub_node.cpp:(.text+0x1ab): undefined reference to `ros::NodeHandle::~NodeHandle()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/dan/dan_ws/devel/.private/object_detect_sub/lib/object_detect_sub/sub] Error 1
+make[1]: *** [CMakeFiles/sub.dir/all] Error 2
+make: *** [all] Error 2

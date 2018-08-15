@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/cob_cam3d_throttle/share/cob_cam3d_throttle/cmake/cob_cam3d_throttleConfig-version.cmake

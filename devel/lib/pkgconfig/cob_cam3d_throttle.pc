@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/cob_cam3d_throttle/lib/pkgconfig/cob_cam3d_throttle.pc

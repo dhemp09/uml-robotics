@@ -1,0 +1,65 @@
+[  0%] Built target cob_object_detection_msgs_generate_messages_py
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_MoveToTable
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TriggerAction
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TriggerActionGoal
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TableObjectClusterAction
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneExtractionActionResult
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TableObjectClusterActionFeedback
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_Point2D
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_GetBoundingBoxes
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_GetGeometryMap
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_ModifyMap
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_GetTables
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TableObjectClusterActionResult
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_FilterObject
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneExtractionActionFeedback
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneScene
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_GetObjectsOfClass
+[  0%] [  0%] [  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PolylinePoint
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_ShapeArray
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_SimilarityScore
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TableObjectClusterFeedback
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_Polygon
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TriggerActionFeedback
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TriggerFeedback
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TableObjectClusterGoal
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_SetPointMap
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_SetGeometryMap
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TableObjectClusterResult
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneExtractionAction
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneExtractionGoal
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_CurvedPolygonArray
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_Plane
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneExtractionActionGoal
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_SetBoundingBoxes
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneExtractionResult
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TriggerGoal
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_Shape
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TableObjectClusterActionGoal
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_Feature
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_UpdateMap
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_GetPointMap
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_GetPlane
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TriggerActionResult
+Built target _cob_3d_mapping_msgs_generate_messages_check_deps_TriggerResult
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_CurvedPolygon
+[  0%] [  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_PlaneExtractionFeedback
+Built target cob_object_detection_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] [  0%] Built target cob_object_detection_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_cpp
+[  0%] [  0%] [  0%] Built target geometry_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_lisp
+Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target _cob_3d_mapping_msgs_generate_messages_check_deps_GetApproachPoseForPolygon
+[ 32%] Built target cob_3d_mapping_msgs_generate_messages_cpp
+[ 65%] Built target cob_3d_mapping_msgs_generate_messages_lisp
+[100%] Built target cob_3d_mapping_msgs_generate_messages_py
+[100%] Built target cob_3d_mapping_msgs_generate_messages

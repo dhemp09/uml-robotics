@@ -1,0 +1,39 @@
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp: In function ‘void cloud_cb(pcl::PointCloud<pcl::PointXYZRGB>::Ptr)’:
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:117:31: error: ‘class std::vector<pcl::PointIndices>’ has no member named ‘indices’
+   for(int k = 0; k < clusters.indices[j].size(); k++){
+                               ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:118:67: error: ‘class std::vector<pcl::PointIndices>’ has no member named ‘indices’
+    if(objectCenters.points[i].x == colored_cloud->points[clusters.indices[j].x
+                                                                   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:119:67: error: ‘class std::vector<pcl::PointIndices>’ has no member named ‘indices’
+    && objectCenters.points[i].y == colored_cloud->points[clusters.indices[j].y
+                                                                   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:120:67: error: ‘class std::vector<pcl::PointIndices>’ has no member named ‘indices’
+    && objectCenters.points[i].z == colored_cloud->points[clusters.indices[j].z){
+                                                                   ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:120:79: error: expected ‘]’ before ‘)’ token
+    && objectCenters.points[i].z == colored_cloud->points[clusters.indices[j].z){
+                                                                               ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:120:79: error: expected ‘]’ before ‘)’ token
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:120:79: error: expected ‘]’ before ‘)’ token
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:121:65: error: ‘class std::vector<pcl::PointIndices>’ has no member named ‘indices’
+     objectCenters.points[i].r == colored_cloud->points[clusters.indices[j].r;
+                                                                 ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:121:77: error: expected ‘]’ before ‘;’ token
+     objectCenters.points[i].r == colored_cloud->points[clusters.indices[j].r;
+                                                                             ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:122:65: error: ‘class std::vector<pcl::PointIndices>’ has no member named ‘indices’
+     objectCenters.points[i].g == colored_cloud->points[clusters.indices[j].g;
+                                                                 ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:122:77: error: expected ‘]’ before ‘;’ token
+     objectCenters.points[i].g == colored_cloud->points[clusters.indices[j].g;
+                                                                             ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:123:65: error: ‘class std::vector<pcl::PointIndices>’ has no member named ‘indices’
+     objectCenters.points[i].b == colored_cloud->points[clusters.indices[j].b;
+                                                                 ^
+/home/dan/dan_ws/src/region_growing_rgb/src/kinect_segmentation.cpp:123:77: error: expected ‘]’ before ‘;’ token
+     objectCenters.points[i].b == colored_cloud->points[clusters.indices[j].b;
+                                                                             ^
+make[2]: *** [CMakeFiles/kinect_segmentation.dir/src/kinect_segmentation.cpp.o] Error 1
+make[1]: *** [CMakeFiles/kinect_segmentation.dir/all] Error 2
+make: *** [all] Error 2

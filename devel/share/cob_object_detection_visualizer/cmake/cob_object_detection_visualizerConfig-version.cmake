@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/cob_object_detection_visualizer/share/cob_object_detection_visualizer/cmake/cob_object_detection_visualizerConfig-version.cmake

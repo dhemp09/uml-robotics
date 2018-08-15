@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/object_cloud/lib/pkgconfig/object_cloud.pc

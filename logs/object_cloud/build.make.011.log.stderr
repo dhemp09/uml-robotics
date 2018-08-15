@@ -1,0 +1,7 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘pclCloud segment(pclCloud)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:38:25: error: conversion from ‘pclCloud* {aka pcl::PointCloud<pcl::PointXYZRGB>*}’ to non-scalar type ‘pcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka boost::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}’ requested
+  pclCloud::Ptr input = &p;
+                         ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,13 @@
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp: In function ‘void callBack(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:17:36: error: ‘const _pose_type’ has no member named ‘point’
+    cerr << msg->detections[i].pose.point.x << " " << 
+                                    ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:18:28: error: ‘const _pose_type’ has no member named ‘point’
+    msg->detections[i].pose.point.y << " " 
+                            ^
+/home/dan/dan_ws/src/object_detection_sub2/src/object_detect_sub_node.cpp:19:23: error: ‘const _detections_type’ has no member named ‘pose’
+    << msg->detections.pose.point.z << endl;
+                       ^
+make[2]: *** [CMakeFiles/sub.dir/src/object_detect_sub_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/sub.dir/all] Error 2
+make: *** [all] Error 2

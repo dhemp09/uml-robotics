@@ -1,0 +1,8 @@
+prefix=/home/dan/dan_ws/devel/.private/uml_race
+
+Name: uml_race
+Description: Description of uml_race
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dan/dan_ws/devel/.private/uml_race/lib 
+Requires: 

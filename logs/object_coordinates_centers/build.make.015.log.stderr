@@ -1,0 +1,6 @@
+/home/dan/dan_ws/src/object_coordinates_centers/src/pointXYZ_from_xy.cpp:10:9: error: #include expects "FILENAME" or <FILENAME>
+ #include
+         ^
+make[2]: *** [CMakeFiles/pointXYZ.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pointXYZ.dir/all] Error 2
+make: *** [all] Error 2

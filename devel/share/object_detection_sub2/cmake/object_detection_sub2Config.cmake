@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/object_detection_sub2/share/object_detection_sub2/cmake/object_detection_sub2Config.cmake

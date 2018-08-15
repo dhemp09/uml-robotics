@@ -1,0 +1,55 @@
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] [  0%] Built target geometry_msgs_generate_messages_py
+Built target sensor_msgs_generate_messages_py
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImageActionResult
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObjectGoal
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_PoseRT
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImageFeedback
+[  0%] [  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_StopObjectRecording
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImageAction
+Built target _cob_object_detection_msgs_generate_messages_check_deps_BaTestEnvironment
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_RectArray
+[  0%] [  0%] [  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObjectFeedback
+Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectionArray
+Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImageActionFeedback
+[  0%] [  0%] [  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObjectResult
+Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjectsResult
+Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImageResult
+[  0%] [  0%] [  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObject
+Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjectsAction
+Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjectsGoal
+[  0%] [  0%] [  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_Detection
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_StartObjectRecording
+Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObjectActionFeedback
+Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObjectActionResult
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImageGoal
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjectsFeedback
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImageActionGoal
+[  0%] [  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjects
+Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObjectActionGoal
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_Rect
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjectsActionResult
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_AcquireObjectImage
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_TrainObjectAction
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_BagTrainObject
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_MaskArray
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_SaveRecordedObject
+[  0%] [  0%] [  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjectsActionFeedback
+Built target _cob_object_detection_msgs_generate_messages_check_deps_Mask
+Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target _cob_object_detection_msgs_generate_messages_check_deps_DetectObjectsActionGoal
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] [  0%] Built target sensor_msgs_generate_messages_cpp
+Built target std_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] [  0%] Built target std_msgs_generate_messages_lisp
+Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[ 34%] Built target cob_object_detection_msgs_generate_messages_py
+[ 67%] Built target cob_object_detection_msgs_generate_messages_lisp
+[100%] Built target cob_object_detection_msgs_generate_messages_cpp
+[100%] Built target cob_object_detection_msgs_generate_messages

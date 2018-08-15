@@ -1,0 +1,12 @@
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:7:21: error: ‘geometry_msgs’ does not name a type
+ void callBack(const geometry_msgs::PoseArray::ConstPtr& msg){
+                     ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:7:45: error: expected unqualified-id before ‘::’ token
+ void callBack(const geometry_msgs::PoseArray::ConstPtr& msg){
+                                             ^
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:7:45: error: expected ‘)’ before ‘::’ token
+/home/dan/dan_ws/src/object_detection_sub2/src/pointXYZ_from_xy.cpp:7:45: error: expected initializer before ‘::’ token
+make[2]: *** [CMakeFiles/pub.dir/src/pointXYZ_from_xy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pub.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

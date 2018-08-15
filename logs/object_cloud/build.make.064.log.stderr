@@ -1,0 +1,20 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void pcl_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:71:34: error: invalid conversion from ‘std::vector<int>*’ to ‘std::vector<int>::size_type {aka long unsigned int}’ [-fpermissive]
+  vector<int>index(new vector<int>);
+                                  ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/include/boost/format.hpp:17,
+                 from /usr/include/boost/math/policies/error_handling.hpp:31,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/indigo/include/ros/time.h:58,
+                 from /opt/ros/indigo/include/ros/ros.h:38,
+                 from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:1:
+/usr/include/c++/4.8/bits/stl_vector.h:295:7: error:   initializing argument 1 of ‘std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>]’ [-fpermissive]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:72:2: error: ‘removeNanFromPointCloud’ is not a member of ‘pcl’
+  pcl::removeNanFromPointCloud(*input, *nanInput, index);
+  ^
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

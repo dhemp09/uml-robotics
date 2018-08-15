@@ -1,0 +1,18 @@
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp: In function ‘void pcl_cb(const ConstPtr&)’:
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:85:34: error: no matching function for call to ‘pcl::PassThrough<pcl::PointXYZRGB>::filter(pcl::IndicesPtr&)’
+    pass2.filter (segmentedIndices);
+                                  ^
+/home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:85:34: note: candidates are:
+In file included from /usr/include/pcl-1.7/pcl/filters/passthrough.h:43:0,
+                 from /home/dan/dan_ws/src/object_cloud/src/object_cloud_node.cpp:9:
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h:103:7: note: void pcl::FilterIndices<PointT>::filter(pcl::FilterIndices<PointT>::PointCloud&) [with PointT = pcl::PointXYZRGB; pcl::FilterIndices<PointT>::PointCloud = pcl::PointCloud<pcl::PointXYZRGB>]
+       filter (PointCloud &output)
+       ^
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h:103:7: note:   no known conversion for argument 1 from ‘pcl::IndicesPtr {aka boost::shared_ptr<std::vector<int> >}’ to ‘pcl::FilterIndices<pcl::PointXYZRGB>::PointCloud& {aka pcl::PointCloud<pcl::PointXYZRGB>&}’
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h:112:7: note: void pcl::FilterIndices<PointT>::filter(std::vector<int>&) [with PointT = pcl::PointXYZRGB]
+       filter (std::vector<int> &indices)
+       ^
+/usr/include/pcl-1.7/pcl/filters/filter_indices.h:112:7: note:   no known conversion for argument 1 from ‘pcl::IndicesPtr {aka boost::shared_ptr<std::vector<int> >}’ to ‘std::vector<int>&’
+make[2]: *** [CMakeFiles/object_cloud_node.dir/src/object_cloud_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/object_cloud_node.dir/all] Error 2
+make: *** [all] Error 2

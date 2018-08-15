@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/uml_race/lib/pkgconfig/uml_race.pc

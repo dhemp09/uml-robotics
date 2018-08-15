@@ -1,0 +1,1 @@
+/home/dan/dan_ws/devel/.private/object_cloud/share/object_cloud/cmake/object_cloudConfig-version.cmake

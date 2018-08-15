@@ -1,0 +1,34 @@
+#include<ros/ros.h>
+#include<pcl/PCLPointCloud2.h>
+#include<pcl/conversions.h>
+#include<geometry_msgs/PoseArray.h>
+#include<pcl/point_types.h>
+#include<pcl/io/pcd_io.h>
+#include<pcl_ros/transforms.h>
+#include<vector>
+#include<pcl_ros/point_cloud.h>
+
+ros::Publisher pub;
+pcl::PointCloud<pcl::PointXYZRGB> m;
+
+void callBack(const geometry_msgs::PoseArray::ConstPtr& msg){
+	
+	pcl::PointCloud<pcl::PointXYZRGB>::Ptr centers(new pcl::PointCloud<pcl::PointXYZRGB>);
+	centers->header.frame_id = "my_frame";
+	for(int i = 0; i < msg->poses.size(); i++){
+		centers->push_back(m.at(msg->poses[i].position.x, msg->poses[i].position.y));
+	}
+	pub.publish(centers);
+}
+
+int main (int argc, char** argv){
+	ros::init(argc, argv, "pointXYZCoordinate");
+	ros::NodeHandle n;
+	ros::Subscriber sub = n.subscribe("/object_centers", 1, callBack);
+	m = *(ros::topic::waitForMessage<pcl::PointCloud<pcl::PointXYZRGB> >
+		("/camera/depth_registered/points", n));	
+	pub = n.advertise<pcl::PointCloud<pcl::PointXYZRGB> >("/object_XYZ_centers", 1);
+	ros::spin();
+
+	return 0;
+}
